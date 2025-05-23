@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "fullstack-project",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "migrationStorage": "json",
+    "seederStorage": "json"
+  },
+  "test": {},
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "fullstack-project",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "migrationStorage": "json",
+    "seederStorage": "json"
+  }
+}
