@@ -17,14 +17,14 @@ module.exports.createChat = async (req, res, next) => {
       file,
     });
 
-    const bot = await User.findOne({ where: { email: 'quote@bot.com' } });
+    const bot = await User.findOne({ where: { email: 'joke@bot.com' } });
 
     if (!bot) {
       const passwordHash = await bcrypt.hash('dummy_password', 10);
       const newBot = await User.create({
-        firstName: 'Quote',
+        firstName: 'Joke',
         lastName: 'Bot',
-        email: 'quote@bot.com',
+        email: 'joke@bot.com',
         password: passwordHash,
         imgSrc: 'https://cdn-icons-png.flaticon.com/512/4712/4712109.png',
         isMale: null,
